@@ -32,7 +32,7 @@
 								<li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
 								<li class="active"><a href="{{ url('/about') }}" class="nav-link">About</a></li>
 								<li><a href="{{ url('/services') }}" class="nav-link">Services</a></li>
-								<li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+								<!-- <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li> -->
 								<li><a href="{{ url('/schedule') }}" class="nav-link">Schedule</a></li>
 							</ul>
 						</nav>
@@ -59,114 +59,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="domain_search_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="domain_search">
-							<div class="domain_search_background"></div>
-							<div class="domain_search_overlay"></div>
-							<form action="#" class="domain_search_form" id="domain_search_form">
-								<input type="text" class="domain_search_input" placeholder="Your domain name" required="required">
-								<div class="domain_search_dropdown d-flex flex-row align-items-center justify-content-center">
-									<div class="domain_search_selected">.com</div>
-									<ul>
-										<li>.com</li>
-										<li>.io</li>
-										<li>.net</li>
-									</ul>
-								</div>
-								<button class="domain_search_button">search</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+ 	</div>
 
 	<!-- Domain Pricing -->
 
-	<div class="domain_pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="domain_pricing_content">
-						<ul class="d-flex flex-md-row flex-column align-items-center justify-content-md-between justify-content-center">
-							<li><a href="#"><span>.</span>com<span>$3.99</span></a></li>
-							<li><a href="#"><span>.</span>net<span>$1.99</span></a></li>
-							<li><a href="#"><span>.</span>org<span>$2.99</span></a></li>
-							<li><a href="#"><span>.</span>io<span>$3.99</span></a></li>
-							<li><a href="#"><span>.</span>info<span>$13.99</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Milestones -->
-
+	
 	<div class="milestones">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="milestones_container d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-start">
-						
-						<!-- Milestone Item -->
-						<div class="milestone d-flex flex-row align-items-center justify-content-start">
-							<div class="milestone_icon"><img src="images/icon_5.svg" alt="https://www.flaticon.com/authors/srip"></div>
-							<div class="milestone_content">
-								<div class="milestone_counter" data-end-value="12557">0</div>
-								<div class="milestone_text">Websites</div>
-							</div>
-						</div>
-
-						<!-- Milestone Item -->
-						<div class="milestone d-flex flex-row align-items-center justify-content-start">
-							<div class="milestone_icon"><img src="images/icon_6.svg" alt="https://www.flaticon.com/authors/srip"></div>
-							<div class="milestone_content">
-								<div class="milestone_counter" data-end-value="100000" data-sign-before="+">0</div>
-								<div class="milestone_text">Websites</div>
-							</div>
-						</div>
-
-						<!-- Milestone Item -->
-						<div class="milestone d-flex flex-row align-items-center justify-content-start">
-							<div class="milestone_icon"><img src="images/icon_7.svg" alt="https://www.flaticon.com/authors/srip"></div>
-							<div class="milestone_content">
-								<div class="milestone_counter" data-end-value="14610">0</div>
-								<div class="milestone_text">Websites</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- About -->
-
-	<div class="about">
 		<div class="container">
 			<div class="row row-lg-eq-height">
 				
 				<!-- About Image -->
 				<div class="col-lg-6 order-lg-1 order-2">
 					<div class="about_image d-flex flex-column align-items-center justify-content-center">
-						<img src="images/servers.png" alt="">
+						<img src="images/racket.jpg" alt="" style="width: 400px; border-radius: 10px">
 					</div>
 				</div>
 
 				<!-- About Content -->
 				<div class="col-lg-6 order-lg-2 order-1">
 					<div class="about_content">
-						<div class="section_title"><h2>What we do @ BHost</h2></div>
+						<div class="section_title"><h2>More About Centro Atletico</h2></div>
 						<div class="about_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam ut interdum ultricies. In a leo vel dolor tempor feugiat. Cras accumsan faucibus magna a imperdiet. Donec mi neque, pretium eu quam at, facilisis venenatis tortor. Suspendisse potenti.</p>
+							<p>Centro is located in  North Cubao, Quezon City. It is near in Farmers Plaza and just walking distance from SM Hypermarket. The court has 8 taraflex courts. It is spacious enough for busy night owl badminton players. If you have missing on your badminton apparel, the court has small badminton shop that sells a variety of equipment and accessories for play. It sells major brands represented including Yonex, RSL, Victor, Dunlop and others. Rackets,  shoes, bags, shuttlecocks and other supplies can be obtained as well here. </p>
 						</div>
-						<div class="button about_button"><a href="#">read more</a></div>
 					</div>
 				</div>
 
@@ -176,25 +91,7 @@
 
 	<!-- Video -->
 
-	<div class="video">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="video_content">
-						<div class="video_container_outer">
-							<div class="video_overlay">
-								<div class="video_text">Life at BHost - A day at our company</div>
-							</div>
-							<div class="video_container">
-								<video id="vid1" class="video-js vjs-default-skin" controls width="100%" height="100%" data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/IV3ueyrp5M4"}], "youtube": { "iv_load_policy": 1 } }'>
-								</video>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- Team -->
 
@@ -205,18 +102,35 @@
 					<div class="section_title_container text-center">
 						<div class="section_title"><h2>The Team</h2></div>
 						<div class="team_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris velit arcu, scelerisque dignissim massa quis, mattis facilisis erat. Aliquam erat volutpat. Sed efficitur diam ut interdum ultricies.</p>
+							<p> Behind the project.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row team_row">
 				
+								<!-- Team Item -->
+				<div class="col-xl-3 col-md-6">
+					<div class="team_item">
+						<div class="team_image">
+							<div class="team_overlay trans_400"></div>
+							<div class="team_social">
+								 
+							</div>
+						</div>
+						<div class="team_content text-center">
+							
+						</div>
+					</div>
+				</div>
+
+
+
 				<!-- Team Item -->
 				<div class="col-xl-3 col-md-6">
 					<div class="team_item">
 						<div class="team_image">
-							<img src="images/team_1.jpg" alt="https://unsplash.com/@michaeldam">
+							<img src="images/d1.png" alt="https://unsplash.com/@chrisjoelcampbell">
 							<div class="team_overlay trans_400"></div>
 							<div class="team_social">
 								<ul class="d-flex flex-row align-items-center justify-content-between">
@@ -227,8 +141,8 @@
 							</div>
 						</div>
 						<div class="team_content text-center">
-							<div class="team_name">Julia Williams</div>
-							<div class="team_title">Team Manager</div>
+							<div class="team_name">Dodge Samuel Culaniban</div>
+							<div class="team_title">Front-End Developer</div>
 						</div>
 					</div>
 				</div>
@@ -237,7 +151,7 @@
 				<div class="col-xl-3 col-md-6">
 					<div class="team_item">
 						<div class="team_image">
-							<img src="images/team_2.jpg" alt="https://unsplash.com/@stairhopper">
+							<img src="images/d2.png" alt="https://unsplash.com/@brookecagle">
 							<div class="team_overlay trans_400"></div>
 							<div class="team_social">
 								<ul class="d-flex flex-row align-items-center justify-content-between">
@@ -248,8 +162,8 @@
 							</div>
 						</div>
 						<div class="team_content text-center">
-							<div class="team_name">Michael Smith</div>
-							<div class="team_title">Manager</div>
+							<div class="team_name">Janelle Joy Gabat</div>
+							<div class="team_title">Back-End Developer</div>
 						</div>
 					</div>
 				</div>
@@ -258,40 +172,13 @@
 				<div class="col-xl-3 col-md-6">
 					<div class="team_item">
 						<div class="team_image">
-							<img src="images/team_3.jpg" alt="https://unsplash.com/@chrisjoelcampbell">
 							<div class="team_overlay trans_400"></div>
 							<div class="team_social">
-								<ul class="d-flex flex-row align-items-center justify-content-between">
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
+								 
 							</div>
 						</div>
 						<div class="team_content text-center">
-							<div class="team_name">Jessica Brown</div>
-							<div class="team_title">Project Manager</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Item -->
-				<div class="col-xl-3 col-md-6">
-					<div class="team_item">
-						<div class="team_image">
-							<img src="images/team_4.jpg" alt="https://unsplash.com/@brookecagle">
-							<div class="team_overlay trans_400"></div>
-							<div class="team_social">
-								<ul class="d-flex flex-row align-items-center justify-content-between">
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team_content text-center">
-							<div class="team_name">Jack Parker</div>
-							<div class="team_title">Developer</div>
+							
 						</div>
 					</div>
 				</div>
@@ -304,10 +191,10 @@
 
 	<footer class="footer">
 		<div class="footer_phone d-flex flex-row align-items-center justify-content-sm-end justify-content-center">
-			<div>Need Help? Call Us 24/7</div>
+			<div>Need Help? Call Us.</div>
 			<div class="d-flex flex-row align-items-center justify-content-start">
 				<i class="fa fa-phone" aria-hidden="true"></i>
-				<div>652-345 3222 11</div>
+				<div>0905-746-9567</div>
 			</div>
 		</div>
 		<div class="footer_content">
@@ -315,94 +202,9 @@
 				<div class="row footer_row">
 
 					<!-- Footer Column -->
-					<div class="col-xl-3 col-md-6">
-						<div class="footer_title">Hosting Packages</div>
-						<div class="footer_list">
-							<ul>
-								<li><a href="#">Cloud Hosting</a></li>
-								<li><a href="#">Web Hosting</a></li>
-								<li><a href="#">Reseller Hosting</a></li>
-								<li><a href="#">VPS Hosting</a></li>
-								<li><a href="#">Dedicated Servers</a></li>
-								<li><a href="#">Windows Hosting</a></li>
-								<li><a href="#">Linux Servers</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Footer Column -->
-					<div class="col-xl-3 col-md-6">
-						<div class="footer_title">Our Services</div>
-						<div class="footer_list">
-							<ul>
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">Logo Design</a></li>
-								<li><a href="#">Domains Register</a></li>
-								<li><a href="#">Search Advertising</a></li>
-								<li><a href="#">Email Marketing</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Footer Column -->
-					<div class="col-xl-3 col-md-6">
-						<div class="footer_title">Useful Links</div>
-						<div class="footer_list">
-							<ul>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Footer Column -->
-					<div class="col-xl-3 col-md-6">
-						<div class="logo footer_logo"><a href="#"><span>b</span>Host</a></div>
-						<div class="footer_info">
-							<ul>
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div>Address</div></div>
-									<div>1481 Creekside Lane Avila Beach, CA 931</div>
-								</li>
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div>Phone</div></div>
-									<div>+53 345 7953 32453</div>
-								</li>
-								<li class="d-flex flex-row align-items-start justify-content-start">
-									<div><div>E-mail</div></div>
-									<div>yourmail@gmail.com</div>
-								</li>
-							</ul>
-						</div>
-						<div class="cards">
-							<ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-								<li><a href="#"><img src="images/card_1.png" alt=""></a></li>
-								<li><a href="#"><img src="images/card_2.png" alt=""></a></li>
-								<li><a href="#"><img src="images/card_3.png" alt=""></a></li>
-								<li><a href="#"><img src="images/card_4.png" alt=""></a></li>
-								<li><a href="#"><img src="images/card_5.png" alt=""></a></li>
-							</ul>
-						</div>
-						<div class="social footer_social">
-							<ul class="d-flex flex-row align-items-center justify-content-start">
-								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+					
 		<div class="copyright_bar text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+<p>Culaniban | Gabat </p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 	</footer>
 </div>
 

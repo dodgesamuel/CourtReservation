@@ -1,3 +1,4 @@
+@if(Session::has('account'))
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,6 @@
     <meta name="author" content="">
 
     <title>Centro Atletico - Dashboard</title>
-
     <!-- Bootstrap core CSS-->
     <link href={{asset("vendor/bootstrap/css/bootstrap.min.css")}} rel="stylesheet">
 
@@ -36,13 +36,15 @@
       </button>
 
       <!-- Navbar Search -->
-    
 
-    
+      <!-- Navbar -->
+
+        <button class="btn btn-default" id="btnLogout">Logout</button>
+  
     </nav>
 
-    <div id="wrapper">
 
+    <div id="wrapper">
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item active">
@@ -61,7 +63,9 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Schedule</span></a>
         </li>
+
       </ul>
+
 
       <div id="content-wrapper">
 
@@ -81,9 +85,9 @@
               <div class="card text-white bg-primary o-hidden h-100">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fas fa-child"></i>
+                    <i class="fas fa-user"></i>
                   </div>
-                  <div class="mr-5">{{ $newClient }} New Clients</div>
+                  <div class="mr-5">{{ $newClient }} New Client/s</div>
                 </div>
                 <a class="card-footer text-white clearfix small z-1" href="{{ url('/admin/reservation') }}">
                   <span class="float-left">View Details</span>
@@ -144,6 +148,25 @@
     <script src={{asset("js/demo/datatables-demo.js")}}></script>
     <script src={{asset("js/demo/chart-area-demo.js")}}></script>
 
+    <script>
+      $(document).ready(function(){
+        $('#btnLogout').click(function(){
+          $.ajax({
+            url: '/admin/logout',
+            type: 'get',
+            success: function(output){
+              window.location.href = '/login'
+            }
+          });
+        });
+      });
+    </script>
+
   </body>
 
 </html>
+@else
+  <script>
+    window.location.href = '/login';
+  </script>
+@endif

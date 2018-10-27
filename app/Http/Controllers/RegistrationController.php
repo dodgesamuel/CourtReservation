@@ -8,6 +8,12 @@ use App\Registration;
 
 use App\Payment;
 
+use App\Calendar;
+
+use App\Account;
+
+use Session;
+
 use Response;
 
 class RegistrationController extends Controller
@@ -74,5 +80,32 @@ class RegistrationController extends Controller
     	$reserve->status = 1;
 
     	$reserve->save();
+    }
+    public function schedule()
+    {
+    	
+    	return view('schedule_admin');
+    }
+
+    public function login(Request $request)
+    {
+        $username = $request->username;
+        $password = $request->pass;
+
+        $account = Account::where('username', '=', $username)
+                            ->where('password', '=', $password)
+                            ->first();
+        if (isset($account)) {
+            Session::put('account', $account);
+            return Response::json(['location' => '/admin/dashboard']);
+        }
+        else{
+            return Response::json(['title' => 'error', 'text' => 'Invalid Username or Password']);
+        }
+    }
+
+    public function logout()
+    {
+        Session::flush();
     }
 }

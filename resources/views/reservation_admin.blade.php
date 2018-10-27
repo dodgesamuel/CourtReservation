@@ -1,4 +1,6 @@
+@if(Session::has('account'))
 <!DOCTYPE html>
+
 <html lang="en">
 
   <head>
@@ -9,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Centro Atletico - Dashboard</title>
+    <title>Centro Atletico - Reservation</title>
 
     <!-- Bootstrap core CSS-->
     <link href={{asset("vendor/bootstrap/css/bootstrap.min.css")}} rel="stylesheet">
@@ -70,7 +72,7 @@
 
       <!-- Navbar Search -->
     
-
+       <button class="btn btn-default" id="btnLogout">Logout</button>
     
     </nav>
 
@@ -151,10 +153,10 @@
                       <td>
                         @if($reserve->status == 0)
                           <p>
-                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#acceptModal" data-name="{{ $reserve->fname }} {{ $reserve->mname[0] }}@if($reserve->mname){{ '.' }}@endif {{ $reserve->sname }}" data-date="{{ date('F d, Y', strtotime($reserve->date)) }}" data-payment="{{ $amount[$ctr] }}" data-id="{{ $reserve->id }}">Accept</button>
+                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#acceptModal" data-name="{{ $reserve->fname }} {{ $reserve->mname[0] }}@if($reserve->mname){{ '.' }}@endif {{ $reserve->sname }}" data-date="{{ date('F d, Y', strtotime($reserve->date)) }}" data-payment="{{ $amount[$ctr] }}" data-id="{{ $reserve->id }}" style="width: 50px;">Accept</button>
                           </p>
                           <p>
-                             <button type="button" class="btn btn-danger reject" id="reject" style="width: 75px;" data-id="{{ $reserve->id }}">Reject</button>
+                             <button type="button" class="btn btn-danger reject" id="reject" style="width: 50px;" data-id="{{ $reserve->id }}">Reject</button>
                           </p>
                         @elseif($reserve->status == 1)
                           {{ 'ACCEPTED' }}
@@ -350,9 +352,24 @@
           }
         });
 
+        $('#btnLogout').click(function(){
+          $.ajax({
+            url: '/admin/logout',
+            type: 'get',
+            success: function(output){
+              window.location.href = '/login'
+            }
+          });
+        });
+
       });
     </script>
 
   </body>
 
 </html>
+@else
+  <script>
+    window.location.href = '/login';
+  </script>
+@endif

@@ -35,11 +35,21 @@ Route::get('/schedule', function() {
 	return view('schedule');
 });
 
+Route::get('/login', function() {
+	return view('login');
+});
+
+Route::post('/login/admin','RegistrationController@login');
+
+Route::get('/admin/logout', 'RegistrationController@logout');
+
 Route::get('/admin/dashboard', 'RegistrationController@adminIndex');
 
 Route::get('/payment/{id}', 'RegistrationController@payment');
 
 Route::get('/admin/reservation', 'RegistrationController@reserve');
+
+Route::get('/admin/schedule', 'RegistrationController@schedule');
 
 Route::post('/reserve/user', 'RegistrationController@store');
 
